@@ -95,8 +95,8 @@ def make_button_template():
 # メッセージが来た時の反応
 @handler.add(MessageEvent, message=TextMessage)
 def message_text(event):
-    msg = TextSendMessage(text='ウホッ')
-    # msg = make_button_template()
+    # msg = TextSendMessage(text='ウホッ')
+    msg = make_button_template()
     line_bot_api.reply_message(
         event.reply_token,
         msg
