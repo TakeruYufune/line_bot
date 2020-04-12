@@ -1,0 +1,15 @@
+{
+  "ゴリラ1":{
+    "alt_text":"ウホッ",
+    "template_text":"どこに表示されるかな？",
+    "template_title":"タイトルですよ",
+    "template_image_size":"cover",
+    "template_image_url":"https://任意の画像URL.jpg",
+    "actions":[
+      {
+        "actions_uri":"https://任意のページURL",
+        "actions_label":"URIアクションのLABEL"
+      }
+    ]
+  }
+}

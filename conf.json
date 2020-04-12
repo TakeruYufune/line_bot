@@ -1,0 +1,12 @@
+{
+"CHANNEL_SECRET": "3ce31f31fbd9aa0f71b089483387574e",
+"CHANNEL_ACCESS_TOKEN": "AJ8ACHDCFCfhQgRe86b+D71uQ50qJqyUypVmxin8VNjuC0UfyF7n4QuX6vlubCTIPeI0rXzpthelGnT0Z+j5HrReLCy6PXInmFp1zw6sI/YOld7yzhxIVne92R6z6PPdvn5NDQdG1o32sT06r1R6cwdB04t89/1O/w1cDnyilFU=",
+
+"REMOTE_HOST": "データベースのホストIPもしくはホスト名",
+"REMOTE_DB_NAME": "データベースの名前",
+"REMOTE_DB_USER": "データベースのユーザ名",
+"REMOTE_DB_PASS": "データベースのパスワード",
+"REMOTE_DB_TB": "データベースのテーブル名",
+
+"COMMENT": "パーミッションは600とかにしましょう"
+}
