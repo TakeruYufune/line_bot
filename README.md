@@ -1,5 +1,8 @@
 # line_bot
-LINE Bot の練習
+LINE Bot の練習    
+  
+完成品はこちら  
+![イラン人](https://qr-official.line.me/sid/L/248orjfu.png)
 
 ## Heroku の設定
 1. Herokuに登録 ( https://jp.heroku.com/ )
