@@ -35,13 +35,13 @@ LINE Developersのチャネル基本設定にLINE Official Account Manager の�
 1. Herokuで作ったAppのDeployタブ内にあるDeployment methodをGithubに変更
 2. 自分のアカウントとHerokuを紐付け。
 3. Manual deployのDeploy Branchを押してViewが出てくればDeploy完了  
-* Automatic deploysはgitにcommitがあったら自動でデプロイしてくれるやつ  
-* Manual deployは手動でデプロイ(最初はこっちでいじいじした方が良き)  
+＊Automatic deploysはgitにcommitがあったら自動でデプロイしてくれるやつ  
+＊Manual deployは手動でデプロイ(最初はこっちでいじいじした方が良き)  
 ### Heroku Git の場合
 コンソールで  
 ```$ heroku login```  
 ```$ git push heroku master```  
-* masterは作業してるbranch
+＊masterは作業してるbranch
 
 ## 使用言語、ライブラリ等
 - python3
@@ -50,5 +50,5 @@ LINE Developersのチャネル基本設定にLINE Official Account Manager の�
 - gunicorn==20.0.4
 - line-bot-sdk==1.16.0
 - requests==2.23.0  
-* いい感じでインストール。  
-* pythonさえ入れば、それ以下はpip installでいけます。
+＊いい感じでインストール。  
+＊pythonさえ入れば、それ以下はpip installでいけます。
