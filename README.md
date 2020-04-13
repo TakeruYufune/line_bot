@@ -14,12 +14,11 @@ LINE Bot の練習
 6. Messaging API設定タブ内の「チャネルアクセストークン(ロングターム)」を発行(あとで使う)
 7. 応答メッセージを無効に(API経由で応答するため)  
 
-## LINE の設定
-LINE Developersのチャネル基本設定にLINE Official Account Manager のリンクがあるので、  
+## LINE Official Account Manager の設定
+1. LINE Developersのチャネル基本設定にLINE Official Account Manager のリンクがあるので、  
 そこから飛んで、ログイン(自分の個人LINEでOK)  
-そこでアイコンとか諸々変更できる。  
-(もし上記設定とか下記デプロイ方法で詰まったら、ここの設定が反映されてない場合があるので確認してみて。  
-自分はwebhookがdeveloperと違ってて動かないのを経験した。)  
+2. そこでアイコンとか諸々変更できる。  
+3. チャットタブ→応答設定→応答モードをBot、応答メッセージをオフ、Webhookをオフに。  
 
 ## conf.jsonの設定
 1. "CHANNEL_SECRET"を自分の「チャネルシークレット」に変更
@@ -35,12 +34,13 @@ LINE Developersのチャネル基本設定にLINE Official Account Manager の�
 1. Herokuで作ったAppのDeployタブ内にあるDeployment methodをGithubに変更
 2. 自分のアカウントとHerokuを紐付け。
 3. Manual deployのDeploy Branchを押してViewが出てくればDeploy完了  
+
 ＊Automatic deploysはgitにcommitがあったら自動でデプロイしてくれるやつ  
 ＊Manual deployは手動でデプロイ(最初はこっちでいじいじした方が良き)  
 ### Heroku Git の場合
 コンソールで  
 ```$ heroku login```  
-```$ git push heroku master```  
+```$ git push heroku master```   
 ＊masterは作業してるbranch
 
 ## 使用言語、ライブラリ等
@@ -50,5 +50,6 @@ LINE Developersのチャネル基本設定にLINE Official Account Manager の�
 - gunicorn==20.0.4
 - line-bot-sdk==1.16.0
 - requests==2.23.0  
+
 ＊いい感じでインストール。  
 ＊pythonさえ入れば、それ以下はpip installでいけます。
