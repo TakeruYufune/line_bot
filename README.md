@@ -2,7 +2,7 @@
 LINE Bot の練習    
   
 完成品はこちら  
-![lineQR](https://qr-official.line.me/sid/M/248orjfu.png)
+![lineQR](https://user-images.githubusercontent.com/27349791/79123884-19f23b00-7dd6-11ea-9163-3530d1e8f285.png)
 
 ## Heroku の設定
 1. Herokuに登録 ( https://jp.heroku.com/ )
