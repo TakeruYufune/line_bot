@@ -77,7 +77,7 @@ def make_button_template():
             text="ボタン押したらどこかに飛ぶよ！",
             title="どりーの部屋にようこそ",
             image_size="cover",
-            thumbnail_image_url="/Users/friedrich/python_study/line_bot/image/IMG_2425.JPG",
+            thumbnail_image_url="https://i.gzn.jp/img/2018/01/15/google-gorilla-ban/00.jpg",
             actions=[
                 URIAction(
                     uri="https://twitter.com/Friedrich_buryu",
