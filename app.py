@@ -77,7 +77,7 @@ def make_button_template():
             text="ボタン押したらどこかに飛ぶよ！",
             title="どりーの部屋にようこそ",
             image_size="cover",
-            thumbnail_image_url="/Users/friedrich/python_study/line_bot/IMG_2523.jpg",
+            thumbnail_image_url="/Users/friedrich/python_study/line_bot/image/IMG_2425.JPG",
             actions=[
                 URIAction(
                     uri="https://twitter.com/Friedrich_buryu",
