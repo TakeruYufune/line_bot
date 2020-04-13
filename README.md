@@ -47,7 +47,6 @@ LINE Bot の練習
 - python3
 - Flask==1.1.2
 - future==0.18.2
-- gunicorn==20.0.4
 - line-bot-sdk==1.16.0
 - requests==2.23.0  
 
