@@ -72,19 +72,19 @@ def callback():
 
 def make_button_template():
     message_template = TemplateSendMessage(
-        alt_text="にゃーん",
+        alt_text="[緊急]",
         template=ButtonsTemplate(
-            text="どこに表示されるかな？",
-            title="タイトルですよ",
+            text="ボタン押したらどこかに飛ぶよ！",
+            title="どりーの部屋にようこそ",
             image_size="cover",
-            thumbnail_image_url="https://任意の画像URL.jpg",
+            thumbnail_image_url="IMG_2523.jpg",
             actions=[
                 URIAction(
-                    uri="https://任意のページURL",
-                    label="URIアクションのLABEL"
+                    uri="https://twitter.com/Friedrich_buryu",
+                    label="Twitter"
                 ),
                 URIAction(
-                    uri="https://任意のページURL",
+                    uri="https://hackz.team/",
                     label="ウホウホウホ"
                 )
             ]
