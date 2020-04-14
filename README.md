@@ -29,9 +29,9 @@ LINE Bot の練習
 
 ## デプロイ方法
 1. Herokuで作ったAppの「Open App」ボタンを押して、Viewを開く。  
-(mainはなんもいじってないのでnotFoundになるはず)
-2. そこのリンク+"/callback"がwebhookになる。
-3. webhookの設定は、LINE DevelopersのMessaging API設定内にあるので設定してwebhookの利用を有効にする。  
+2. /test でtest OKと表示されたら成功。
+3. /callbackがwebhookになる。
+4. webhookの設定は、LINE DevelopersのMessaging API設定内にあるので設定してwebhookの利用を有効にする。  
 (ちなみに同じ場所にあるQRコードで友達登録できるよ)  
 ### GitHub の場合
 1. Herokuで作ったAppのDeployタブ内にあるDeployment methodをGithubに変更
