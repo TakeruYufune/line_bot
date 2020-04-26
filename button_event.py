@@ -31,7 +31,7 @@ from linebot.models import (
 #     return message_template
 
 class EngineerCheck:
-    def question_a():
+    def question_a(self):
         button_template = TemplateSendMessage(
             alt_text="エンジニア診断Q1",
             template=ButtonsTemplate(
@@ -53,7 +53,7 @@ class EngineerCheck:
         )
         return button_template
 
-    def question_b(data: str):
+    def question_b(self):
         button_template = TemplateSendMessage(
             alt_text="エンジニア診断Q2",
             template=ButtonsTemplate(
@@ -75,7 +75,7 @@ class EngineerCheck:
         )
         return button_template
 
-    def question_c(data: str):
+    def question_c(self):
         button_template = TemplateSendMessage(
             alt_text="エンジニア診断Q2",
             template=ButtonsTemplate(
@@ -97,7 +97,7 @@ class EngineerCheck:
         )
         return button_template
 
-    def question_d(data: str):
+    def question_d(self):
         button_template = TemplateSendMessage(
             alt_text="エンジニア診断Q3",
             template=ButtonsTemplate(
@@ -119,7 +119,7 @@ class EngineerCheck:
         )
         return button_template
 
-    def question_e(data: str):
+    def question_e(self):
         button_template = TemplateSendMessage(
             alt_text="エンジニア診断Q3",
             template=ButtonsTemplate(
@@ -141,7 +141,7 @@ class EngineerCheck:
         )
         return button_template
 
-    def question_f(data: str):
+    def question_f(self):
         button_template = TemplateSendMessage(
             alt_text="エンジニア診断Q3",
             template=ButtonsTemplate(
@@ -163,7 +163,7 @@ class EngineerCheck:
         )
         return button_template
 
-    def question_g(data: str):
+    def question_g(self):
         button_template = TemplateSendMessage(
             alt_text="エンジニア診断Q3",
             template=ButtonsTemplate(
