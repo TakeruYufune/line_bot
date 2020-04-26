@@ -88,7 +88,42 @@ def message_text(event):
     elif message_text == 'ジェネラルエンジニア':
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='あなたはチーム開発における、リーダーやマネージャーに向いています。\nハッカソンに出てみてはいかがでしょう？')
+            engineer_check.answer_h()
+        )
+    elif message_text == 'キラキラエンジニア':
+        line_bot_api.reply_message(
+            event.reply_token,
+            engineer_check.answer_i()
+        )
+    elif message_text == 'アーティストエンジニア':
+        line_bot_api.reply_message(
+            event.reply_token,
+            engineer_check.answer_j()
+        )
+    elif message_text == 'スポンジエンジニア':
+        line_bot_api.reply_message(
+            event.reply_token,
+            engineer_check.answer_k()
+        )
+    elif message_text == '自由奔放エンジニア':
+        line_bot_api.reply_message(
+            event.reply_token,
+            engineer_check.answer_l()
+        )
+    elif message_text == '超集中エンジニア':
+        line_bot_api.reply_message(
+            event.reply_token,
+            engineer_check.answer_m()
+        )
+    elif message_text == '二刀流エンジニア':
+        line_bot_api.reply_message(
+            event.reply_token,
+            engineer_check.answer_n()
+        )
+    elif message_text == 'モチベーションエンジニア':
+        line_bot_api.reply_message(
+            event.reply_token,
+            engineer_check.answer_o()
         )
 
 # 値が帰ってきたときの反応
