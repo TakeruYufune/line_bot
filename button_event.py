@@ -222,7 +222,7 @@ class EngineerCheck:
             alt_text="アーティストエンジニア",
             template=ButtonsTemplate(
                 title="アーティストエンジニア",
-                text="あなたはデザイン、設計、コード、環境などあらゆることに拘ることで質の高いものを作ることができます。ハッカソンに出てみてはいかがでしょう？",
+                text="あなたはデザイン、コード、などを拘ることで質の高いものを作ることができます。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
                     uri="https://hackz.connpass.com/event/138742/",
