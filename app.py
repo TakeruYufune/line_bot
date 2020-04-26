@@ -85,6 +85,11 @@ def message_text(event):
             event.reply_token,
             engineer_check.question_a()
         )
+    elif message_text == 'ジェネラルエンジニア':
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text='あなたはチーム開発における、リーダーやマネージャーに向いています。¥nハッカソンに出てみてはいかがでしょう？')
+        )
 
 # 値が帰ってきたときの反応
 @handler.add(PostbackEvent)
