@@ -315,3 +315,18 @@ class EngineerCheck:
             )
         )
         return button_template
+
+class FollowUpEvent:
+    def follow_button(self):
+        button_template = TemplateSendMessage(
+            alt_text="初めまして！",
+            template=ButtonsTemplate(
+                actions=[
+                  PostbackTemplateAction(
+                    label='エンジニア診断',
+                    text='エンジニア診断'
+                  )
+                ]
+            )
+        )
+        return button_template
