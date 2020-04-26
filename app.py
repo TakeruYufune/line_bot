@@ -3,7 +3,6 @@
 import os
 import sys
 import json
-from decimal import Decimal #金融系の計算で丸め誤差を排除するために必要なライブラリ
 
 # try:
 #     import MySQLdb
@@ -28,7 +27,13 @@ from linebot.models import ( # 使用するモデル(イベント, メッセー�
     PostbackTemplateAction,URIAction
 )
 
+# 自作のbutton_eventライブラリをimport
+import button_event
+
 app = Flask(__name__)
+
+# インスタンス化
+engineer_check = button_event.EngineerCheck()
 
 ABS_PATH = os.path.dirname(os.path.abspath(__file__))
 with open(ABS_PATH+'/conf.json', 'r') as f:
@@ -70,37 +75,34 @@ def callback():
         abort(400)
     return 'OK'
 
-def make_button_template():
-    message_template = TemplateSendMessage(
-        alt_text="[緊急]",
-        template=ButtonsTemplate(
-            text="ボタン押したらどこかに飛ぶよ！",
-            title="どりーの部屋にようこそ",
-            image_size="cover",
-            thumbnail_image_url="https://national-flag.com/material/019-national-flag.jpg",
-            actions=[
-                URIAction(
-                    uri="https://twitter.com/Friedrich_buryu",
-                    label="Twitter"
-                ),
-                URIAction(
-                    uri="https://hackz.team/",
-                    label="ウホウホウホ"
-                )
-            ]
-        )
-    )
-    return message_template
-
 # メッセージが来た時の反応
 @handler.add(MessageEvent, message=TextMessage)
 def message_text(event):
-    # msg = TextSendMessage(text='ウホッ')
-    msg = make_button_template()
+    message_text = event.message.text
+
+    if message_text == 'エンジニア診断':
+        line_bot_api.reply_message(
+            event.reply_token,
+            engineer_check.question_a()
+        )
+
+# 値が帰ってきたときの反応
+@handler.add(PostbackEvent)
+def on_postback(event):
+    reply_token = event.reply_token
+    user_id = event.source.user_id
+    postback_msg = event.postback.data
+
+    app.logger.info(postback_msg)
+
+    question = getattr(engineer_check, postback_msg)
+
+    # 次の質問投げつける
     line_bot_api.reply_message(
         event.reply_token,
-        msg
+        question()
     )
+
 
 # Follow Event ## フォローとかブロックとか監視したいときに使う。まだ理解してない。
 # @handler.add(FollowEvent)
