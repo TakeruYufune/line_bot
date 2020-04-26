@@ -314,8 +314,6 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="モチベーションエンジニア",
             template=ButtonsTemplate(
-                image_size="cover",
-                thumbnail_image_url="https://任意の画像URL.jpg",
                 title="モチベーションエンジニア",
                 text="あなたは報酬や成果があると凄まじい力を発揮します。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
