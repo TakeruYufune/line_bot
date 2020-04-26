@@ -88,7 +88,7 @@ def message_text(event):
     elif message_text == 'ジェネラルエンジニア':
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='あなたはチーム開発における、リーダーやマネージャーに向いています。¥nハッカソンに出てみてはいかがでしょう？')
+            TextSendMessage(text='あなたはチーム開発における、リーダーやマネージャーに向いています。\nハッカソンに出てみてはいかがでしょう？')
         )
 
 # 値が帰ってきたときの反応
