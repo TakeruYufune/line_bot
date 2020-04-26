@@ -189,7 +189,7 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="ジェネラルエンジニア",
             template=ButtonsTemplate(
-                title="ジェネラルエンジニア",
+                # title="ジェネラルエンジニア",
                 text="あなたはチーム開発における、リーダーやマネージャーに向いています。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
