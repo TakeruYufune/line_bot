@@ -195,7 +195,7 @@ class EngineerCheck:
                 text="あなたはチーム開発における、リーダーやマネージャーに向いています。\nハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
-                    uri="https://hackz.connpass.com/event/138742/"
+                    uri="https://hackz.connpass.com/event/138742/",
                     label="開催中のハッカソン"
                   )
                   
@@ -214,7 +214,7 @@ class EngineerCheck:
                 text="あなたはエンジニア以外ともうまく付き合うことができ、営業と開発を同時に行えます。\nハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
-                    uri="https://hackz.connpass.com/event/138742/"
+                    uri="https://hackz.connpass.com/event/138742/",
                     label="開催中のハッカソン"
                   )
                   
@@ -233,7 +233,7 @@ class EngineerCheck:
                 text="あなたはデザイン・設計・コード・環境などあらゆることに拘ることで質の高いものを作ることができます。\nハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
-                    uri="https://hackz.connpass.com/event/138742/"
+                    uri="https://hackz.connpass.com/event/138742/",
                     label="開催中のハッカソン"
                   )
                   
@@ -252,7 +252,7 @@ class EngineerCheck:
                 text="あなたは何色にでも染まるタイプです。チーム開発では周りに合わせることが得意。\nハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
-                    uri="https://hackz.connpass.com/event/138742/"
+                    uri="https://hackz.connpass.com/event/138742/",
                     label="開催中のハッカソン"
                   )
                   
@@ -271,7 +271,7 @@ class EngineerCheck:
                 text="あなたは好きなものを自分のペースで作る力に長けています。\nハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
-                    uri="https://hackz.connpass.com/event/138742/"
+                    uri="https://hackz.connpass.com/event/138742/",
                     label="開催中のハッカソン"
                   )
                   
@@ -290,7 +290,7 @@ class EngineerCheck:
                 text="あなたは一度集中すると完成するまでプログラミングを続けてしまう才能があります。\nハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
-                    uri="https://hackz.connpass.com/event/138742/"
+                    uri="https://hackz.connpass.com/event/138742/",
                     label="開催中のハッカソン"
                   )
                   
@@ -309,7 +309,7 @@ class EngineerCheck:
                 text="あなたはフロントエンド・バックエンド問わず学習することができます。\nハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
-                    uri="https://hackz.connpass.com/event/138742/"
+                    uri="https://hackz.connpass.com/event/138742/",
                     label="開催中のハッカソン"
                   )
                 ]
@@ -327,7 +327,7 @@ class EngineerCheck:
                 text="あなたは報酬や成果があると凄まじい力を発揮します。\nハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
-                    uri="https://hackz.connpass.com/event/138742/"
+                    uri="https://hackz.connpass.com/event/138742/",
                     label="開催中のハッカソン"
                   )
                 ]
