@@ -35,9 +35,6 @@ app = Flask(__name__)
 # インスタンス化
 engineer_check = button_event.EngineerCheck()
 
-# インスタンス化
-follow_event = button_event.FollowUpEvent()
-
 ABS_PATH = os.path.dirname(os.path.abspath(__file__))
 with open(ABS_PATH+'/conf.json', 'r') as f:
     CONF_DATA = json.load(f)
@@ -148,40 +145,39 @@ def on_postback(event):
 
 
 # Follow Event ## フォローとかブロックとか監視したいときに使う。まだ理解してない。
-@handler.add(FollowEvent)
-def on_follow(event):
-    reply_token = event.reply_token
-    user_id = event.source.user_id
-    profiles = line_bot_api.get_profile(user_id=user_id)
-    display_name = profiles.display_name
-    picture_url = profiles.picture_url
-    status_message = profiles.status_message
+# @handler.add(FollowEvent)
+# def on_follow(event):
+#     reply_token = event.reply_token
+#     user_id = event.source.user_id
+#     profiles = line_bot_api.get_profile(user_id=user_id)
+#     display_name = profiles.display_name
+#     picture_url = profiles.picture_url
+#     status_message = profiles.status_message
 
-    # DBへの保存
-    # try:
-        # conn = MySQLdb.connect(user=REMOTE_DB_USER, passwd=REMOTE_DB_PASS, host=REMOTE_HOST, db=REMOTE_DB_NAME)
-        # c = conn.cursor()
-        # sql = "SELECT `id` FROM`"+REMOTE_DB_TB+"` WHERE `user_id` = '"+user_id+"';"
-        # c.execute(sql)
-        # ret = c.fetchall()
-        # if len(ret) == 0:
-        #     sql = "INSERT INTO `"+REMOTE_DB_TB+"` (`user_id`, `display_name`, `picture_url`, `status_message`, `status`)\
-        #       VALUES ('"+user_id+"', '"+str(display_name)+"', '"+str(picture_url)+"', '"+str(status_message)+"', 1);"
-        # elif len(ret) == 1:
-        #     sql = "UPDATE `"+REMOTE_DB_TB+"` SET `display_name` = '"+str(display_name)+"', `picture_url` = '"+str(picture_url)+"',\
-        #     `status_message` = '"+str(status_message)+"', `status` = '1' WHERE `user_id` = '"+user_id+"';"
-        # c.execute(sql)
-        # conn.commit()
-    # finally:
-    #     conn.close()
-    #     c.close()
+#     # DBへの保存
+#     # try:
+#         # conn = MySQLdb.connect(user=REMOTE_DB_USER, passwd=REMOTE_DB_PASS, host=REMOTE_HOST, db=REMOTE_DB_NAME)
+#         # c = conn.cursor()
+#         # sql = "SELECT `id` FROM`"+REMOTE_DB_TB+"` WHERE `user_id` = '"+user_id+"';"
+#         # c.execute(sql)
+#         # ret = c.fetchall()
+#         # if len(ret) == 0:
+#         #     sql = "INSERT INTO `"+REMOTE_DB_TB+"` (`user_id`, `display_name`, `picture_url`, `status_message`, `status`)\
+#         #       VALUES ('"+user_id+"', '"+str(display_name)+"', '"+str(picture_url)+"', '"+str(status_message)+"', 1);"
+#         # elif len(ret) == 1:
+#         #     sql = "UPDATE `"+REMOTE_DB_TB+"` SET `display_name` = '"+str(display_name)+"', `picture_url` = '"+str(picture_url)+"',\
+#         #     `status_message` = '"+str(status_message)+"', `status` = '1' WHERE `user_id` = '"+user_id+"';"
+#         # c.execute(sql)
+#         # conn.commit()
+#     # finally:
+#     #     conn.close()
+#     #     c.close()
 
-    # メッセージの送信
-    line_bot_api.reply_message(
-        reply_token=reply_token,
-        messages=TextSendMessage(text='{Nickname}さん、はじめまして🇮🇷\n友だち追加ありがとうございます。\n自称イラン人のどりーです！\n「エンジニア診断」\nと送るとあなたがどんなエンジニアなのかを簡単に診断します。\nその他の相談や質問は随時受け付けています！'),
-        follow_event.follow_button()
-    )
+#     # メッセージの送信
+#     line_bot_api.reply_message(
+#         reply_token=reply_token,
+#         messages=TextSendMessage(text='')
+#     )
 
 # def send_push_message(user_id=None, content=None):
 #     if user_id is None or content is None:
