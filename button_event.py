@@ -30,7 +30,7 @@ from linebot.models import (
 #     )
 #     return message_template
 
-class EngineerSindan:
+class EngineerCheck:
     def question_a():
         button_template = TemplateSendMessage(
             alt_text="エンジニア診断Q1",
