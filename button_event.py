@@ -189,8 +189,6 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="ジェネラルエンジニア",
             template=ButtonsTemplate(
-                image_size="cover",
-                thumbnail_image_url="https://任意の画像URL.jpg",
                 title="ジェネラルエンジニア",
                 text="あなたはチーム開発における、リーダーやマネージャーに向いています。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
@@ -224,7 +222,7 @@ class EngineerCheck:
             alt_text="アーティストエンジニア",
             template=ButtonsTemplate(
                 title="アーティストエンジニア",
-                text="あなたはデザイン・設計・コード・環境などあらゆることに拘ることで質の高いものを作ることができます。ハッカソンに出てみてはいかがでしょう？",
+                text="あなたはデザイン、設計、コード、環境などあらゆることに拘ることで質の高いものを作ることができます。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
                     uri="https://hackz.connpass.com/event/138742/",
@@ -239,8 +237,6 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="スポンジエンジニア",
             template=ButtonsTemplate(
-                image_size="cover",
-                thumbnail_image_url="https://任意の画像URL.jpg",
                 title="スポンジエンジニア",
                 text="あなたは何色にでも染まるタイプです。チーム開発では周りに合わせることが得意。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
@@ -258,8 +254,6 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="自由奔放エンジニア",
             template=ButtonsTemplate(
-                image_size="cover",
-                thumbnail_image_url="https://任意の画像URL.jpg",
                 title="自由奔放エンジニア",
                 text="あなたは好きなものを自分のペースで作る力に長けています。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
@@ -277,8 +271,6 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="超集中エンジニア",
             template=ButtonsTemplate(
-                image_size="cover",
-                thumbnail_image_url="https://任意の画像URL.jpg",
                 title="超集中エンジニア",
                 text="あなたは一度集中すると完成するまでプログラミングを続けてしまう才能があります。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
@@ -296,8 +288,6 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="二刀流エンジニア",
             template=ButtonsTemplate(
-                image_size="cover",
-                thumbnail_image_url="https://任意の画像URL.jpg",
                 title="二刀流エンジニア",
                 text="あなたはフロントエンド・バックエンド問わず学習することができます。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
