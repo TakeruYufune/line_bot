@@ -179,7 +179,7 @@ def on_follow(event):
     # メッセージの送信
     line_bot_api.reply_message(
         reply_token=reply_token,
-        messages=TextSendMessage(text='{Nickname}さん、はじめまして🇮🇷\n友だち追加ありがとうございます。\n自称イラン人のどりーです！\n「エンジニア診断」\nと送るとあなたがどんなエンジニアなのかを簡単に診断します。\nその他の相談や質問は随時受け付けています！')
+        messages=TextSendMessage(text='{Nickname}さん、はじめまして🇮🇷\n友だち追加ありがとうございます。\n自称イラン人のどりーです！\n「エンジニア診断」\nと送るとあなたがどんなエンジニアなのかを簡単に診断します。\nその他の相談や質問は随時受け付けています！'),
         follow_event.follow_button()
     )
 
