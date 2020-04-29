@@ -211,6 +211,12 @@ class EngineerCheck:
         return [image_message,button_template]
 
     def answer_i(self):
+
+        image_message = ImageSendMessage(
+            original_content_url=url_current_path+'IMG_2425.JPG',
+            preview_image_url=url_current_path+'IMG_2425.JPG'
+        )
+
         button_template = TemplateSendMessage(
             alt_text="キラキラエンジニア",
             template=ButtonsTemplate(
@@ -224,9 +230,15 @@ class EngineerCheck:
                 ]
             )
         )
-        return button_template
+        return [image_message,button_template]
 
     def answer_j(self):
+
+        image_message = ImageSendMessage(
+            original_content_url=url_current_path+'IMG_2425.JPG',
+            preview_image_url=url_current_path+'IMG_2425.JPG'
+        )
+
         button_template = TemplateSendMessage(
             alt_text="アーティストエンジニア",
             template=ButtonsTemplate(
@@ -240,9 +252,15 @@ class EngineerCheck:
                 ]
             )
         )
-        return button_template
+        return [image_message,button_template]
 
     def answer_k(self):
+
+        image_message = ImageSendMessage(
+            original_content_url=url_current_path+'IMG_2425.JPG',
+            preview_image_url=url_current_path+'IMG_2425.JPG'
+        )
+
         button_template = TemplateSendMessage(
             alt_text="スポンジエンジニア",
             template=ButtonsTemplate(
@@ -257,9 +275,15 @@ class EngineerCheck:
                 ]
             )
         )
-        return button_template
+        return [image_message,button_template]
 
     def answer_l(self):
+
+        image_message = ImageSendMessage(
+            original_content_url=url_current_path+'IMG_2425.JPG',
+            preview_image_url=url_current_path+'IMG_2425.JPG'
+        )
+
         button_template = TemplateSendMessage(
             alt_text="自由奔放エンジニア",
             template=ButtonsTemplate(
@@ -274,9 +298,15 @@ class EngineerCheck:
                 ]
             )
         )
-        return button_template
+        return [image_message,button_template]
 
     def answer_m(self):
+
+        image_message = ImageSendMessage(
+            original_content_url=url_current_path+'IMG_2425.JPG',
+            preview_image_url=url_current_path+'IMG_2425.JPG'
+        )
+
         button_template = TemplateSendMessage(
             alt_text="超集中エンジニア",
             template=ButtonsTemplate(
@@ -291,9 +321,15 @@ class EngineerCheck:
                 ]
             )
         )
-        return button_template
+        return [image_message,button_template]
 
     def answer_n(self):
+
+        image_message = ImageSendMessage(
+            original_content_url=url_current_path+'IMG_2425.JPG',
+            preview_image_url=url_current_path+'IMG_2425.JPG'
+        )
+
         button_template = TemplateSendMessage(
             alt_text="二刀流エンジニア",
             template=ButtonsTemplate(
@@ -307,9 +343,15 @@ class EngineerCheck:
                 ]
             )
         )
-        return button_template
+        return [image_message,button_template]
 
     def answer_o(self):
+
+        image_message = ImageSendMessage(
+            original_content_url=url_current_path+'IMG_2425.JPG',
+            preview_image_url=url_current_path+'IMG_2425.JPG'
+        )
+
         button_template = TemplateSendMessage(
             alt_text="モチベーションエンジニア",
             template=ButtonsTemplate(
@@ -323,4 +365,4 @@ class EngineerCheck:
                 ]
             )
         )
-        return button_template
+        return [image_message,button_template]
