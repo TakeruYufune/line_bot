@@ -220,7 +220,6 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="キラキラエンジニア",
             template=ButtonsTemplate(
-                title="キラキラエンジニア",
                 text="あなたはエンジニア以外ともうまく付き合うことができ、営業と開発を同時に行えます。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
@@ -242,7 +241,6 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="アーティストエンジニア",
             template=ButtonsTemplate(
-                title="アーティストエンジニア",
                 text="あなたはデザイン、コード、などを拘ることで質の高いものを作ることができます。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
@@ -264,7 +262,6 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="スポンジエンジニア",
             template=ButtonsTemplate(
-                title="スポンジエンジニア",
                 text="あなたは何色にでも染まるタイプです。チーム開発では周りに合わせることが得意。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
@@ -287,7 +284,6 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="自由奔放エンジニア",
             template=ButtonsTemplate(
-                title="自由奔放エンジニア",
                 text="あなたは好きなものを自分のペースで作る力に長けています。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
@@ -310,7 +306,6 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="超集中エンジニア",
             template=ButtonsTemplate(
-                title="超集中エンジニア",
                 text="あなたは一度集中すると完成するまでプログラミングを続けてしまう才能があります。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
@@ -333,7 +328,6 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="二刀流エンジニア",
             template=ButtonsTemplate(
-                title="二刀流エンジニア",
                 text="あなたはフロントエンド・バックエンド問わず学習することができます。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
@@ -355,7 +349,6 @@ class EngineerCheck:
         button_template = TemplateSendMessage(
             alt_text="モチベーションエンジニア",
             template=ButtonsTemplate(
-                title="モチベーションエンジニア",
                 text="あなたは報酬や成果があると凄まじい力を発揮します。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
