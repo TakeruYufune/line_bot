@@ -10,10 +10,7 @@ from linebot.models import (
     PostbackTemplateAction,URIAction,MessageAction
 )
 
-ABS_PATH_IMG = os.path.join(os.path.dirname(os.path.abspath(__file__)),'image')
-print('abspath',os.path.dirname(os.path.abspath(__file__)))
-print('img_path1',os.path.dirname(os.path.abspath(__file__))+'/image')
-print('img_path2',ABS_PATH_IMG)
+url_current_path = 'https://line-ilan.herokuapp.com/'
 
 # def make_button_template():
 #     message_template = TemplateSendMessage(
@@ -195,8 +192,8 @@ class EngineerCheck:
     def answer_h(self):
 
         image_message = ImageSendMessage(
-            original_content_url=os.path.join(ABS_PATH_IMG,'IMG_2425.JPG'),
-            preview_image_url=os.path.join(ABS_PATH_IMG,'IMG_2425.JPG')
+            original_content_url=url_current_path+'IMG_2425.JPG',
+            preview_image_url=url_current_path+'IMG_2425.JPG'
         )
 
         button_template = TemplateSendMessage(

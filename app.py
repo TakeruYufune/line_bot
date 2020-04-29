@@ -13,7 +13,7 @@ import json
 
 from argparse import ArgumentParser
 
-from flask import Flask, request, abort
+from flask import Flask, request, abort, send_from_directory
 from linebot import (
     LineBotApi, WebhookHandler
 )
@@ -31,13 +31,16 @@ from linebot.models import ( # 使用するモデル(イベント, メッセー�
 import button_event
 
 app = Flask(__name__)
-
+# appの設定
+app.config['IMG_FOLDER']= './image'
 # インスタンス化
 engineer_check = button_event.EngineerCheck()
 
 ABS_PATH = os.path.dirname(os.path.abspath(__file__))
 with open(ABS_PATH+'/conf.json', 'r') as f:
     CONF_DATA = json.load(f)
+
+
 
 CHANNEL_SECRET = CONF_DATA['CHANNEL_SECRET']
 CHANNEL_ACCESS_TOKEN = CONF_DATA['CHANNEL_ACCESS_TOKEN']
@@ -62,6 +65,11 @@ handler = WebhookHandler(CHANNEL_SECRET)
 @app.route("/test")
 def test():
     return('test ok')
+
+@app.route('/image/<filename>')
+# ファイルを表示する
+def uploaded_file(filename):
+    return send_from_directory(app.config['IMG_FOLDER'],filename)
 
 # LINE APIにアプリがあることを知らせるためのもの
 @app.route("/callback", methods=['POST'])
