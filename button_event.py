@@ -4,7 +4,7 @@ import os
 # ButtonsTemplate -> 返信時のbuttonのtemplate
 # URIAction ->
 from linebot.models import (
-    FollowEvent, UnfollowEvent, MessageEvent, PostbackEvent,
+    ImageSendMessage, FollowEvent, UnfollowEvent, MessageEvent, PostbackEvent,
     TextMessage, TextSendMessage, TemplateSendMessage,
     ButtonsTemplate, CarouselTemplate, CarouselColumn,
     PostbackTemplateAction,URIAction,MessageAction

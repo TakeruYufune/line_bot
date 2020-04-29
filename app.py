@@ -21,7 +21,7 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import ( # 使用するモデル(イベント, メッセージ, アクションなど)を列挙
-    FollowEvent, UnfollowEvent, MessageEvent, PostbackEvent,
+    ImageSendMessage, FollowEvent, UnfollowEvent, MessageEvent, PostbackEvent,
     TextMessage, TextSendMessage, TemplateSendMessage,
     ButtonsTemplate, CarouselTemplate, CarouselColumn,
     PostbackTemplateAction,URIAction
