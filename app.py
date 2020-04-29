@@ -134,7 +134,6 @@ def on_postback(event):
     postback_msg = event.postback.data
 
     app.logger.info(postback_msg)
-
     question = getattr(engineer_check, postback_msg)
 
     # 次の質問投げつける
