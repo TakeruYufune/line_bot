@@ -11,9 +11,9 @@ from linebot.models import (
 )
 
 ABS_PATH_IMG = os.path.join(os.path.dirname(os.path.abspath(__file__)),'image')
-print(os.path.dirname(os.path.abspath(__file__)))
-# print(os.path.dirname(os.path.abspath(__file__)+'/image'))
-print(ABS_PATH_IMG)
+print('abspath',os.path.dirname(os.path.abspath(__file__)))
+print('img_path1',os.path.dirname(os.path.abspath(__file__))+'/image')
+print('img_path2',ABS_PATH_IMG)
 
 # def make_button_template():
 #     message_template = TemplateSendMessage(
