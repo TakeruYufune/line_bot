@@ -10,7 +10,7 @@ from linebot.models import (
     PostbackTemplateAction,URIAction,MessageAction
 )
 
-url_current_path = 'https://line-ilan.herokuapp.com/'
+url_current_path = 'https://line-ilan.herokuapp.com/image'
 
 # def make_button_template():
 #     message_template = TemplateSendMessage(
