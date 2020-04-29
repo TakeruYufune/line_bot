@@ -11,12 +11,12 @@ from linebot.models import (
 )
 
 ABS_PATH_IMG = os.path.join(os.path.dirname(os.path.abspath(__file__)),'image')
-
+print(ABS_PATH_IMG)
 # def make_button_template():
 #     message_template = TemplateSendMessage(
 #         alt_text="[緊急]",
 #         template=ButtonsTemplate(
-#             text="ボタン押したらどこかに飛ぶよ！",
+#             text="ボタン押したらどこかに飛ぶよ！",)
 #             title="どりーの部屋にようこそ",
 #             image_size="cover",
 #             thumbnail_image_url="https://national-flag.com/material/019-national-flag.jpg",
