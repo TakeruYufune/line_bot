@@ -1,3 +1,6 @@
+
+import os
+
 # ButtonsTemplate -> 返信時のbuttonのtemplate
 # URIAction ->
 from linebot.models import (
@@ -7,6 +10,7 @@ from linebot.models import (
     PostbackTemplateAction,URIAction,MessageAction
 )
 
+ABS_PATH_IMG = os.path.join(os.path.dirname(os.path.abspath(__file__)),'image')
 
 # def make_button_template():
 #     message_template = TemplateSendMessage(
@@ -186,10 +190,15 @@ class EngineerCheck:
         return button_template
 
     def answer_h(self):
+
+        image_message = ImageSendMessage(
+            original_content_url=os.path.join(ABS_PATH_IMG,'IMG_2425.JPG'),
+            preview_image_url=os.path.join(ABS_PATH_IMG,'IMG_2425.JPG')
+        )
+
         button_template = TemplateSendMessage(
             alt_text="ジェネラルエンジニア",
             template=ButtonsTemplate(
-                # title="ジェネラルエンジニア",
                 text="あなたはチーム開発における、リーダーやマネージャーに向いています。ハッカソンに出てみてはいかがでしょう？",
                 actions=[
                   URIAction(
@@ -199,7 +208,7 @@ class EngineerCheck:
                 ]
             )
         )
-        return button_template
+        return [image_message,button_template]
 
     def answer_i(self):
         button_template = TemplateSendMessage(
