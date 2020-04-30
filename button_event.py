@@ -40,7 +40,7 @@ class EngineerCheck:
             alt_text="エンジニア診断Q1",
             template=ButtonsTemplate(
                 image_size="cover",
-                thumbnail_image_url="https://任意の画像URL.jpg",
+                thumbnail_image_url=url_current_path+'A.png',
                 title="Question.1",
                 text="プログラミング以外もやりたい",
                 actions=[
