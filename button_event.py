@@ -150,7 +150,7 @@ class EngineerCheck:
             alt_text="エンジニア診断Q3",
             template=ButtonsTemplate(
                 image_size="cover",
-                thumbnail_image_url=url_current_path+'F.png',
+                thumbnail_image_url=url_current_path+'F.jpg',
                 title="Question.3",
                 text="同時に複数のことができる",
                 actions=[
