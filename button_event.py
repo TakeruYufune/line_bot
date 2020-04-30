@@ -192,8 +192,8 @@ class EngineerCheck:
     def answer_h(self):
 
         image_message = ImageSendMessage(
-            original_content_url=url_current_path+'IMG_2425.JPG',
-            preview_image_url=url_current_path+'IMG_2425.JPG'
+            original_content_url=url_current_path+'H.png',
+            preview_image_url=url_current_path+'H.png'
         )
 
         button_template = TemplateSendMessage(
@@ -213,8 +213,8 @@ class EngineerCheck:
     def answer_i(self):
 
         image_message = ImageSendMessage(
-            original_content_url=url_current_path+'IMG_2425.JPG',
-            preview_image_url=url_current_path+'IMG_2425.JPG'
+            original_content_url=url_current_path+'I.png',
+            preview_image_url=url_current_path+'I.png'
         )
 
         button_template = TemplateSendMessage(
@@ -234,8 +234,8 @@ class EngineerCheck:
     def answer_j(self):
 
         image_message = ImageSendMessage(
-            original_content_url=url_current_path+'IMG_2425.JPG',
-            preview_image_url=url_current_path+'IMG_2425.JPG'
+            original_content_url=url_current_path+'J.png',
+            preview_image_url=url_current_path+'J.png'
         )
 
         button_template = TemplateSendMessage(
@@ -255,8 +255,8 @@ class EngineerCheck:
     def answer_k(self):
 
         image_message = ImageSendMessage(
-            original_content_url=url_current_path+'IMG_2425.JPG',
-            preview_image_url=url_current_path+'IMG_2425.JPG'
+            original_content_url=url_current_path+'K.png',
+            preview_image_url=url_current_path+'K.png'
         )
 
         button_template = TemplateSendMessage(
@@ -277,8 +277,8 @@ class EngineerCheck:
     def answer_l(self):
 
         image_message = ImageSendMessage(
-            original_content_url=url_current_path+'IMG_2425.JPG',
-            preview_image_url=url_current_path+'IMG_2425.JPG'
+            original_content_url=url_current_path+'L.png',
+            preview_image_url=url_current_path+'L.png'
         )
 
         button_template = TemplateSendMessage(
@@ -299,8 +299,8 @@ class EngineerCheck:
     def answer_m(self):
 
         image_message = ImageSendMessage(
-            original_content_url=url_current_path+'IMG_2425.JPG',
-            preview_image_url=url_current_path+'IMG_2425.JPG'
+            original_content_url=url_current_path+'M.png',
+            preview_image_url=url_current_path+'M.png'
         )
 
         button_template = TemplateSendMessage(
@@ -321,8 +321,8 @@ class EngineerCheck:
     def answer_n(self):
 
         image_message = ImageSendMessage(
-            original_content_url=url_current_path+'IMG_2425.JPG',
-            preview_image_url=url_current_path+'IMG_2425.JPG'
+            original_content_url=url_current_path+'N.png',
+            preview_image_url=url_current_path+'N.png'
         )
 
         button_template = TemplateSendMessage(
@@ -342,8 +342,8 @@ class EngineerCheck:
     def answer_o(self):
 
         image_message = ImageSendMessage(
-            original_content_url=url_current_path+'IMG_2425.JPG',
-            preview_image_url=url_current_path+'IMG_2425.JPG'
+            original_content_url=url_current_path+'O.png',
+            preview_image_url=url_current_path+'O.png'
         )
 
         button_template = TemplateSendMessage(
