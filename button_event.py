@@ -62,7 +62,7 @@ class EngineerCheck:
             alt_text="エンジニア診断Q2",
             template=ButtonsTemplate(
                 image_size="cover",
-                thumbnail_image_url="https://任意の画像URL.jpg",
+                thumbnail_image_url=url_current_path+'B.png',
                 title="Question.2",
                 text="人と話すのは得意だ",
                 actions=[
@@ -84,7 +84,7 @@ class EngineerCheck:
             alt_text="エンジニア診断Q2",
             template=ButtonsTemplate(
                 image_size="cover",
-                thumbnail_image_url="https://任意の画像URL.jpg",
+                thumbnail_image_url=url_current_path+'C.png',
                 title="Question.2",
                 text="世界は自分中心に回っている",
                 actions=[
@@ -106,7 +106,7 @@ class EngineerCheck:
             alt_text="エンジニア診断Q3",
             template=ButtonsTemplate(
                 image_size="cover",
-                thumbnail_image_url="https://任意の画像URL.jpg",
+                thumbnail_image_url=url_current_path+'D.png',
                 title="Question.3",
                 text="人を支配するのが好きだ",
                 actions=[
@@ -128,7 +128,7 @@ class EngineerCheck:
             alt_text="エンジニア診断Q3",
             template=ButtonsTemplate(
                 image_size="cover",
-                thumbnail_image_url="https://任意の画像URL.jpg",
+                thumbnail_image_url=url_current_path+'E.png',
                 title="Question.3",
                 text="こだわりが強いタイプだ",
                 actions=[
@@ -150,7 +150,7 @@ class EngineerCheck:
             alt_text="エンジニア診断Q3",
             template=ButtonsTemplate(
                 image_size="cover",
-                thumbnail_image_url="https://任意の画像URL.jpg",
+                thumbnail_image_url=url_current_path+'F.png',
                 title="Question.3",
                 text="同時に複数のことができる",
                 actions=[
@@ -172,7 +172,7 @@ class EngineerCheck:
             alt_text="エンジニア診断Q3",
             template=ButtonsTemplate(
                 image_size="cover",
-                thumbnail_image_url="https://任意の画像URL.jpg",
+                thumbnail_image_url=url_current_path+'G.png',
                 title="Question.3",
                 text="自分に自信がない",
                 actions=[
